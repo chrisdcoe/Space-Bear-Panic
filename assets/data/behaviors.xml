@@ -138,27 +138,274 @@
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="Number of Initial Entity Spawns" hidden="false" id="7" name="_NumberofInitialEntitySpawns" order="6"/>
         <number default="60" defaultValue="60" desc="" dropdown="" fullname="EntitySpawnInterval" hidden="false" id="8" name="_EntitySpawnInterval" order="7"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="NumOfEntitiesToSpawn" hidden="false" id="10" name="_NumOfEntitiesToSpawn" order="8"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="RndCellBlock" hidden="true" id="11" name="_RndCellBlock" order="9"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="IsValidForInitialSpawn" hidden="true" id="12" name="_IsValidForInitialSpawn" order="10"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="TestingForNearbyEntities" hidden="true" id="13" name="_TestingForNearbyEntities" order="16"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="CountIndex" hidden="true" id="15" name="_CountIndex" order="11"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="CountX" hidden="true" id="16" name="_CountX" order="12"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="CountY" hidden="true" id="17" name="_CountY" order="13"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="CountNumOfPoints" hidden="false" id="18" name="_CountNumOfPoints" order="14"/>
+        <text default="" defaultValue="" desc="" dropdown="" fullname="CountDebugString" hidden="true" id="19" name="_CountDebugString" order="15"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="SpawnListX1" hidden="true" id="20" name="_SpawnListX1" order="17">
+            <text order="0" value="224"/>
+            <text order="1" value="288"/>
+            <text order="2" value="352"/>
+            <text order="3" value="224"/>
+            <text order="4" value="288"/>
+            <text order="5" value="352"/>
+            <text order="6" value="224"/>
+            <text order="7" value="288"/>
+            <text order="8" value="352"/>
+            <text order="9" value="224"/>
+            <text order="10" value="288"/>
+            <text order="11" value="352"/>
+            <text order="12" value="176"/>
+            <text order="13" value="176"/>
+            <text order="14" value="304"/>
+            <text order="15" value="384"/>
+            <text order="16" value="336"/>
+            <text order="17" value="400"/>
+            <text order="18" value="432"/>
+            <text order="19" value="464"/>
+            <text order="20" value="496"/>
+            <text order="21" value="528"/>
+            <text order="22" value="208"/>
+            <text order="23" value="224"/>
+            <text order="24" value="320"/>
+            <text order="25" value="320"/>
+            <text order="26" value="384"/>
+            <text order="27" value="432"/>
+            <text order="28" value="560"/>
+            <text order="29" value="560"/>
+            <text order="30" value="672"/>
+            <text order="31" value="656"/>
+            <text order="32" value="656"/>
+            <text order="33" value="672"/>
+            <text order="34" value="688"/>
+            <text order="35" value="688"/>
+            <text order="36" value="800"/>
+            <text order="37" value="848"/>
+            <text order="38" value="976"/>
+            <text order="39" value="1008"/>
+            <text order="40" value="1088"/>
+            <text order="41" value="1184"/>
+            <text order="42" value="1152"/>
+            <text order="43" value="1168"/>
+            <text order="44" value="1168"/>
+            <text order="45" value="944"/>
+            <text order="46" value="816"/>
+            <text order="47" value="944"/>
+            <text order="48" value="1056"/>
+            <text order="49" value="1040"/>
+            <text order="50" value="976"/>
+            <text order="51" value="896"/>
+            <text order="52" value="992"/>
+            <text order="53" value="960"/>
+            <text order="54" value="992"/>
+            <text order="55" value="912"/>
+            <text order="56" value="912"/>
+            <text order="57" value="1088"/>
+            <text order="58" value="1088"/>
+            <text order="59" value="1088"/>
+            <text order="60" value="1088"/>
+            <text order="61" value="1088"/>
+            <text order="62" value="1136"/>
+            <text order="63" value="1136"/>
+            <text order="64" value="1136"/>
+            <text order="65" value="1184"/>
+            <text order="66" value="1200"/>
+            <text order="67" value="1200"/>
+            <text order="68" value="1200"/>
+            <text order="69" value="1216"/>
+            <text order="70" value="1152"/>
+            <text order="71" value="1072"/>
+            <text order="72" value="1072"/>
+            <text order="73" value="1072"/>
+            <text order="74" value="992"/>
+            <text order="75" value="992"/>
+            <text order="76" value="992"/>
+            <text order="77" value="1024"/>
+            <text order="78" value="976"/>
+            <text order="79" value="976"/>
+            <text order="80" value="928"/>
+            <text order="81" value="896"/>
+            <text order="82" value="896"/>
+            <text order="83" value="928"/>
+            <text order="84" value="672"/>
+            <text order="85" value="848"/>
+            <text order="86" value="848"/>
+            <text order="87" value="848"/>
+            <text order="88" value="720"/>
+            <text order="89" value="720"/>
+            <text order="90" value="720"/>
+            <text order="91" value="720"/>
+            <text order="92" value="848"/>
+            <text order="93" value="624"/>
+            <text order="94" value="624"/>
+            <text order="95" value="624"/>
+            <text order="96" value="496"/>
+            <text order="97" value="496"/>
+            <text order="98" value="496"/>
+            <text order="99" value="496"/>
+            <text order="100" value="624"/>
+            <text order="101" value="400"/>
+            <text order="102" value="400"/>
+            <text order="103" value="400"/>
+            <text order="104" value="400"/>
+            <text order="105" value="400"/>
+            <text order="106" value="400"/>
+            <text order="107" value="400"/>
+            <text order="108" value="128"/>
+            <text order="109" value="160"/>
+            <text order="110" value="192"/>
+            <text order="111" value="224"/>
+            <text order="112" value="256"/>
+            <text order="113" value="288"/>
+            <text order="114" value="320"/>
+            <text order="115" value="352"/>
+        </list>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="SpawnListY1" hidden="true" id="21" name="_SpawnListY1" order="18">
+            <text order="0" value="528"/>
+            <text order="1" value="528"/>
+            <text order="2" value="528"/>
+            <text order="3" value="624"/>
+            <text order="4" value="624"/>
+            <text order="5" value="624"/>
+            <text order="6" value="720"/>
+            <text order="7" value="720"/>
+            <text order="8" value="720"/>
+            <text order="9" value="816"/>
+            <text order="10" value="816"/>
+            <text order="11" value="816"/>
+            <text order="12" value="896"/>
+            <text order="13" value="928"/>
+            <text order="14" value="912"/>
+            <text order="15" value="912"/>
+            <text order="16" value="1024"/>
+            <text order="17" value="960"/>
+            <text order="18" value="928"/>
+            <text order="19" value="928"/>
+            <text order="20" value="928"/>
+            <text order="21" value="928"/>
+            <text order="22" value="1168"/>
+            <text order="23" value="1168"/>
+            <text order="24" value="1168"/>
+            <text order="25" value="1136"/>
+            <text order="26" value="1168"/>
+            <text order="27" value="1104"/>
+            <text order="28" value="1200"/>
+            <text order="29" value="1104"/>
+            <text order="30" value="1136"/>
+            <text order="31" value="1168"/>
+            <text order="32" value="1200"/>
+            <text order="33" value="1232"/>
+            <text order="34" value="1200"/>
+            <text order="35" value="1168"/>
+            <text order="36" value="1120"/>
+            <text order="37" value="1184"/>
+            <text order="38" value="1168"/>
+            <text order="39" value="1168"/>
+            <text order="40" value="1152"/>
+            <text order="41" value="1184"/>
+            <text order="42" value="1104"/>
+            <text order="43" value="992"/>
+            <text order="44" value="960"/>
+            <text order="45" value="960"/>
+            <text order="46" value="960"/>
+            <text order="47" value="1024"/>
+            <text order="48" value="1024"/>
+            <text order="49" value="912"/>
+            <text order="50" value="928"/>
+            <text order="51" value="816"/>
+            <text order="52" value="736"/>
+            <text order="53" value="672"/>
+            <text order="54" value="608"/>
+            <text order="55" value="512"/>
+            <text order="56" value="496"/>
+            <text order="57" value="800"/>
+            <text order="58" value="752"/>
+            <text order="59" value="672"/>
+            <text order="60" value="592"/>
+            <text order="61" value="512"/>
+            <text order="62" value="512"/>
+            <text order="63" value="592"/>
+            <text order="64" value="672"/>
+            <text order="65" value="848"/>
+            <text order="66" value="672"/>
+            <text order="67" value="576"/>
+            <text order="68" value="528"/>
+            <text order="69" value="400"/>
+            <text order="70" value="320"/>
+            <text order="71" value="368"/>
+            <text order="72" value="336"/>
+            <text order="73" value="304"/>
+            <text order="74" value="304"/>
+            <text order="75" value="336"/>
+            <text order="76" value="368"/>
+            <text order="77" value="208"/>
+            <text order="78" value="208"/>
+            <text order="79" value="160"/>
+            <text order="80" value="368"/>
+            <text order="81" value="368"/>
+            <text order="82" value="176"/>
+            <text order="83" value="176"/>
+            <text order="84" value="128"/>
+            <text order="85" value="256"/>
+            <text order="86" value="320"/>
+            <text order="87" value="384"/>
+            <text order="88" value="384"/>
+            <text order="89" value="320"/>
+            <text order="90" value="256"/>
+            <text order="91" value="192"/>
+            <text order="92" value="192"/>
+            <text order="93" value="256"/>
+            <text order="94" value="320"/>
+            <text order="95" value="384"/>
+            <text order="96" value="384"/>
+            <text order="97" value="320"/>
+            <text order="98" value="256"/>
+            <text order="99" value="192"/>
+            <text order="100" value="192"/>
+            <text order="101" value="176"/>
+            <text order="102" value="208"/>
+            <text order="103" value="240"/>
+            <text order="104" value="272"/>
+            <text order="105" value="336"/>
+            <text order="106" value="368"/>
+            <text order="107" value="400"/>
+            <text order="108" value="400"/>
+            <text order="109" value="368"/>
+            <text order="110" value="336"/>
+            <text order="111" value="304"/>
+            <text order="112" value="272"/>
+            <text order="113" value="240"/>
+            <text order="114" value="208"/>
+            <text order="115" value="176"/>
+        </list>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="RandomSpawnTile" hidden="true" id="22" name="_RandomSpawnTile" order="19"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="SpawnEntities" enabled="true" id="3" name="event-custom" order="2" repeats="true"/>
-            <event displayName="SpawnPowerCell" enabled="true" id="4" name="event-custom" order="4" repeats="true"/>
-            <event displayName="SpawnFuel" enabled="true" id="5" name="event-custom" order="5" repeats="true"/>
-            <event displayName="Every N secs" enabled="true" id="6" name="event-periodic" order="3" repeats="true"/>
+            <event displayName="SpawnPowerCell" enabled="true" id="4" name="event-custom" order="8" repeats="true"/>
+            <event displayName="SpawnFuel" enabled="true" id="5" name="event-custom" order="9" repeats="true"/>
+            <event displayName="Every N secs" enabled="true" id="6" name="event-periodic" order="7" repeats="true"/>
+            <event displayName="RandomCellBlock" enabled="true" id="7" name="event-custom" order="4" repeats="true"/>
+            <event displayName="RandomTriangle" enabled="true" id="8" name="event-custom" order="3" repeats="true"/>
+            <event displayName="SpawnEntities" enabled="true" id="10" name="event-custom" order="6" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="19" attachedevent="true" class="scripts.ActorEvents_19" classname="scripts.ActorEvents_19" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="15" name="ActorEvents_19" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Actor Killed" enabled="true" id="2" name="event-actor-create-kill" order="2" repeats="true"/>
+            <event displayName="Actor Killed" enabled="false" id="2" name="event-actor-create-kill" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="21" attachedevent="true" class="scripts.ActorEvents_21" classname="scripts.ActorEvents_21" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="16" name="ActorEvents_21" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Actor Killed" enabled="true" id="2" name="event-actor-create-kill" order="2" repeats="true"/>
+            <event displayName="Actor Killed" enabled="false" id="2" name="event-actor-create-kill" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_19_19_PowerUpTheShip" classname="scripts.Design_19_19_PowerUpTheShip" desc="" description="" design="true" drawOrder="0" id="19" name="Action Button" oid="-1" package="scripts" shared="false" type="actor">
@@ -420,5 +667,9 @@
         <events>
             <event displayName="Keyboard" enabled="true" id="1" name="event-key-press-release" order="1" repeats="true"/>
         </events>
+    </snippet>
+    <snippet actorid="57" attachedevent="true" class="scripts.ActorEvents_57" classname="scripts.ActorEvents_57" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="53" name="ActorEvents_57" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
     </snippet>
 </pack>
