@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
     <snippet attachedevent="true" class="scripts.SceneEvents_0" classname="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="0" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" shared="false" type="scene">
+        <image default="" defaultValue="" desc="" dropdown="" fullname="ImageEnergyCell" hidden="false" id="1" name="_ImageEnergyCell" order="0"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="EnergyCell" hidden="false" id="2" name="_EnergyCell" order="1"/>
+        <image default="" defaultValue="" desc="" dropdown="" fullname="EnergyImage" hidden="false" id="3" name="_EnergyImage" order="2"/>
+        <image-instance default="" defaultValue="" desc="" dropdown="" fullname="EnergyInstance" hidden="false" id="4" name="_EnergyInstance" order="3"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="xPos" hidden="false" id="5" name="_xPos" order="4"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Width" hidden="false" id="6" name="_Width" order="5"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="yPos" hidden="false" id="7" name="_yPos" order="6"/>
         <blocks/>
         <events>
             <event displayName="Every N secs" enabled="true" id="1" name="event-periodic" order="1" repeats="true"/>
@@ -540,6 +547,7 @@
         <image default="" defaultValue="" desc="" dropdown="" fullname="EnergyImage" hidden="false" id="5" name="_EnergyImage" order="5"/>
         <actor default="" defaultValue="" desc="" dropdown="" fullname="EnergyCell" hidden="false" id="6" name="_EnergyCell" order="6"/>
         <image-instance default="" defaultValue="" desc="" dropdown="" fullname="EnergyInstance" hidden="false" id="7" name="_EnergyInstance" order="7"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="boxWidth" hidden="false" id="8" name="_boxWidth" order="8"/>
         <blocks/>
         <events>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
@@ -671,5 +679,15 @@
     <snippet actorid="57" attachedevent="true" class="scripts.ActorEvents_57" classname="scripts.ActorEvents_57" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="53" name="ActorEvents_57" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_54_54_RandomizeDoors" classname="scripts.Design_54_54_RandomizeDoors" desc="" description="" design="true" drawOrder="0" id="54" name="RandomizeDoors" oid="-1" package="scripts" shared="false" type="scene">
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="PercentClosed" hidden="false" id="1" name="_PercentClosed" order="0"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="RandomlyCloseDoors" hidden="true" id="2" name="_RandomlyCloseDoors" order="1"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="PercentMildlyCracked" hidden="false" id="3" name="_PercentMildlyCracked" order="2"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="PercentVeryCracked" hidden="false" id="4" name="_PercentVeryCracked" order="3"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
     </snippet>
 </pack>
