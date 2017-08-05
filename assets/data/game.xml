@@ -100,16 +100,26 @@
     </input>
     <attcats>
         <cat id="-1" name="Default"/>
+        <cat id="0" name="Difficulty"/>
+        <cat id="1" name="Debug"/>
     </attcats>
     <props/>
     <attributes>
-        <list cid="-1" id="5" name="SpawnListX" save="true" val="list"/>
-        <number cid="-1" id="0" name="Energy" save="true" value="0.0"/>
         <boolean cid="-1" id="2" name="CarryingEnergy" save="true" value="false"/>
+        <number cid="-1" id="7" name="Difficulty" save="true" value="0.0"/>
+        <number cid="1" id="16" name="Killed" save="true" value="0.0"/>
+        <number cid="0" id="13" name="Number of Initial Entity Spawns" save="true" value="6.0"/>
+        <number cid="0" id="18" name="Energy Decay Speed" save="true" value="6.0"/>
+        <number cid="1" id="17" name="Created" save="true" value="0.0"/>
+        <number cid="0" id="10" name="Entity Spawn Interval" save="true" value="60.0"/>
+        <number cid="-1" id="0" name="Energy" save="true" value="0.0"/>
+        <text cid="0" id="14" name="TextDifficulty" save="true" value="NORMAL"/>
         <number cid="-1" id="1" name="Fuel" save="true" value="100.0"/>
-        <number cid="-1" id="3" name="NumOfEntities" save="true" value="0.0"/>
-        <list cid="-1" id="6" name="SpawnListY" save="true" val="list"/>
-        <boolean cid="-1" id="4" name="TestingForNearbyEntities" save="true" value="false"/>
+        <number cid="0" id="11" name="Number of Fuel Cans to Spawn" save="true" value="6.0"/>
+        <number cid="1" id="15" name="Current Entities" save="true" value="0.0"/>
+        <number cid="0" id="12" name="Number of Energy Cells to Spawn" save="true" value="5.0"/>
+        <number cid="0" id="8" name="Entity Spread Rate" save="true" value="4.0"/>
+        <number cid="0" id="9" name="Seconds to Spread" save="true" value="6.0"/>
     </attributes>
     <collisions>
         <poly id="0" name="Square" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
@@ -137,10 +147,12 @@
         <poly id="22" name="Tri 60L Inv" pts="0.0,0.0#0.0,1.0#0.5,0.0"/>
         <poly id="23" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
         <poly id="24" name="Tri 60-2L Inv" pts="0.0,0.0#0.0,1.0#0.5,1.0#1.0,0.0"/>
+        <poly id="26" name="TINY BOX" pts="0.25,0.25#0.25,0.75#0.75,0.75#0.75,0.25"/>
+        <poly id="27" name="Entity Box" pts="0.25,0.25#0.25,0.75#0.75,0.75#0.75,0.25"/>
     </collisions>
     <autotileFormats/>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="4,5,7,8,10,12,14,17,19,21,23,25,30,32,34,36,38,40,41,43,45,48,49,50,51,52,53,54,55,56,57," name="Main Atlas" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="4,5,7,8,10,12,14,17,19,21,23,25,30,32,34,36,38,40,41,43,45,48,49,50,51,52,53,54,55,56,57,59," name="Main Atlas" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>

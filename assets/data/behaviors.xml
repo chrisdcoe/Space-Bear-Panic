@@ -13,7 +13,13 @@
             <event displayName="Every N secs" enabled="true" id="1" name="event-periodic" order="1" repeats="true"/>
             <event displayName="Updating" enabled="true" id="2" name="step" order="3" repeats="true"/>
             <event displayName="Created" enabled="true" id="3" name="init" order="2" repeats="true"/>
-            <event displayName="Actor Created" enabled="true" id="4" name="event-actor-create-kill" order="4" repeats="true"/>
+            <event displayName="Player Killed" enabled="true" id="4" name="event-actor-create-kill" order="4" repeats="true"/>
+            <event displayName="Entity Created" enabled="true" id="5" name="event-type-create-kill" order="5" repeats="true"/>
+            <event displayName="Entity Killed" enabled="true" id="6" name="event-type-create-kill" order="6" repeats="true"/>
+            <event displayName="Type - Type" enabled="true" id="7" name="event-collide-typetotype" order="7" repeats="true"/>
+            <event displayName="Type - Type" enabled="true" id="8" name="event-collide-typetotype" order="8" repeats="true"/>
+            <event displayName="Type - Type" enabled="true" id="9" name="event-collide-typetotype" order="9" repeats="true"/>
+            <event displayName="Type - Type" enabled="true" id="10" name="event-collide-typetotype" order="10" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="5" attachedevent="true" class="scripts.ActorEvents_5" classname="scripts.ActorEvents_5" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="1" name="ActorEvents_5" oid="-1" package="scripts." shared="false" type="actor">
@@ -21,7 +27,7 @@
         <events>
             <event displayName="Get Fuel Can" enabled="true" id="1" name="event-collide-actortotype" order="1" repeats="true"/>
             <event displayName="Get Energy Cell" enabled="true" id="2" name="event-collide-actortotype" order="3" repeats="true"/>
-            <event displayName="Collision with Entity" enabled="true" id="3" name="event-collide-actortotype" order="2" repeats="true"/>
+            <event displayName="Collision with Entity" enabled="false" id="3" name="event-collide-actortotype" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_3_3_8WayMovement" classname="scripts.Design_3_3_8WayMovement" desc="Allows the actor to move up, down, left and right as well as in diagonal directions." description="Allows the actor to move up, down, left and right as well as in diagonal directions." design="true" drawOrder="0" id="3" name="8 Way Movement" oid="-1" package="scripts" shared="false" type="actor">
@@ -74,7 +80,9 @@
     </snippet>
     <snippet actorid="8" attachedevent="true" class="scripts.ActorEvents_8" classname="scripts.ActorEvents_8" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="5" name="ActorEvents_8" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
     </snippet>
     <snippet actorid="10" attachedevent="true" class="scripts.ActorEvents_10" classname="scripts.ActorEvents_10" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="6" name="ActorEvents_10" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
@@ -86,10 +94,11 @@
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="2" name="init" order="4" repeats="true"/>
-            <event displayName="Entity Collision" enabled="true" id="4" name="event-collide-actortogroup" order="7" repeats="true"/>
-            <event displayName="Energy Collision" enabled="true" id="5" name="event-collide-actortotype" order="5" repeats="true"/>
-            <event displayName="Fuel Collision" enabled="true" id="6" name="event-collide-actortotype" order="6" repeats="true"/>
-            <event displayName="Door Collision" enabled="true" id="7" name="event-collide-actortotype" order="9" repeats="true"/>
+            <event displayName="Entity Collision" enabled="true" id="4" name="event-collide-actortogroup" order="8" repeats="true"/>
+            <event displayName="Energy Collision" enabled="true" id="5" name="event-collide-actortotype" order="6" repeats="true"/>
+            <event displayName="Fuel Collision" enabled="true" id="6" name="event-collide-actortotype" order="7" repeats="true"/>
+            <event displayName="Door Collision" enabled="true" id="7" name="event-collide-actortotype" order="10" repeats="true"/>
+            <event displayName="Actor Created" enabled="true" id="8" name="event-actor-create-kill" order="5" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_8_8_EntityMultiply" classname="scripts.Design_8_8_EntityMultiply" desc="" description="" design="true" drawOrder="0" id="8" name="EntityMultiply" oid="-1" package="scripts" shared="false" type="actor">
@@ -104,7 +113,8 @@
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="SecondsToSpread" hidden="false" id="13" name="_SecondsToSpread" order="3"/>
         <blocks/>
         <events>
-            <event displayName="Every N secs" enabled="true" id="1" name="event-periodic" order="1" repeats="true"/>
+            <event displayName="Every N secs" enabled="false" id="1" name="event-periodic" order="1" repeats="true"/>
+            <event displayName="Every N secs Copy" enabled="false" id="2" name="event-periodic" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_9_9_AlwaysSimulate" classname="scripts.Design_9_9_AlwaysSimulate" desc="Allows the actor to simulate even when off screen." description="Allows the actor to simulate even when off screen." design="true" drawOrder="0" id="9" name="Always Simulate" oid="-1" package="scripts" shared="false" type="actor">
@@ -140,18 +150,13 @@
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="RandomYValue" hidden="true" id="2" name="_RandomYValue" order="1"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="IsTileValidForSpawn" hidden="true" id="3" name="_IsTileValidForSpawn" order="2"/>
         <actor default="" defaultValue="" desc="" dropdown="" fullname="Player" hidden="false" id="4" name="_Player" order="3"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Number of Power Cells to Spawn" hidden="false" id="5" name="_NumberofPowerCellstoSpawn" order="4"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Number of Fuel Cans to Spawn" hidden="false" id="6" name="_NumberofFuelCanstoSpawn" order="5"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Number of Initial Entity Spawns" hidden="false" id="7" name="_NumberofInitialEntitySpawns" order="6"/>
-        <number default="60" defaultValue="60" desc="" dropdown="" fullname="EntitySpawnInterval" hidden="false" id="8" name="_EntitySpawnInterval" order="7"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="NumOfEntitiesToSpawn" hidden="false" id="10" name="_NumOfEntitiesToSpawn" order="8"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="RndCellBlock" hidden="true" id="11" name="_RndCellBlock" order="9"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="RndCellBlock" hidden="true" id="11" name="_RndCellBlock" order="9"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="IsValidForInitialSpawn" hidden="true" id="12" name="_IsValidForInitialSpawn" order="10"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="TestingForNearbyEntities" hidden="true" id="13" name="_TestingForNearbyEntities" order="16"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="CountIndex" hidden="true" id="15" name="_CountIndex" order="11"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="CountX" hidden="true" id="16" name="_CountX" order="12"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="CountY" hidden="true" id="17" name="_CountY" order="13"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="CountNumOfPoints" hidden="false" id="18" name="_CountNumOfPoints" order="14"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="CountNumOfPoints" hidden="true" id="18" name="_CountNumOfPoints" order="14"/>
         <text default="" defaultValue="" desc="" dropdown="" fullname="CountDebugString" hidden="true" id="19" name="_CountDebugString" order="15"/>
         <list default="list" defaultValue="list" desc="" dropdown="" fullname="SpawnListX1" hidden="true" id="20" name="_SpawnListX1" order="17">
             <text order="0" value="224"/>
@@ -390,29 +395,28 @@
             <text order="115" value="176"/>
         </list>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="RandomSpawnTile" hidden="true" id="22" name="_RandomSpawnTile" order="19"/>
+        <number default="-1.0" defaultValue="-1.0" desc="" dropdown="" fullname="PrevSpawn" hidden="true" id="23" name="_PrevSpawn" order="20"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="SpawnPowerCell" enabled="true" id="4" name="event-custom" order="8" repeats="true"/>
-            <event displayName="SpawnFuel" enabled="true" id="5" name="event-custom" order="9" repeats="true"/>
+            <event displayName="SpawnEnergyCell" enabled="true" id="4" name="event-custom" order="8" repeats="true"/>
             <event displayName="Every N secs" enabled="true" id="6" name="event-periodic" order="7" repeats="true"/>
-            <event displayName="RandomCellBlock" enabled="true" id="7" name="event-custom" order="4" repeats="true"/>
-            <event displayName="RandomTriangle" enabled="true" id="8" name="event-custom" order="3" repeats="true"/>
             <event displayName="SpawnEntities" enabled="true" id="10" name="event-custom" order="6" repeats="true"/>
+            <event displayName="SpawnFuel" enabled="true" id="11" name="event-custom" order="9" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="19" attachedevent="true" class="scripts.ActorEvents_19" classname="scripts.ActorEvents_19" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="15" name="ActorEvents_19" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Actor Killed" enabled="false" id="2" name="event-actor-create-kill" order="2" repeats="true"/>
+            <event displayName="Actor Killed" enabled="true" id="2" name="event-actor-create-kill" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="21" attachedevent="true" class="scripts.ActorEvents_21" classname="scripts.ActorEvents_21" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="16" name="ActorEvents_21" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Actor Killed" enabled="false" id="2" name="event-actor-create-kill" order="2" repeats="true"/>
+            <event displayName="Actor Killed" enabled="true" id="2" name="event-actor-create-kill" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_19_19_PowerUpTheShip" classname="scripts.Design_19_19_PowerUpTheShip" desc="" description="" design="true" drawOrder="0" id="19" name="Action Button" oid="-1" package="scripts" shared="false" type="actor">
@@ -431,7 +435,6 @@
         <text default="" defaultValue="" desc="Shoot down if the current animation name contains this text." dropdown="" fullname="Down Animations" hidden="false" id="8" name="_DownAnimations" order="7"/>
         <text default="" defaultValue="" desc="Shoot left if the current animation name contains this text." dropdown="" fullname="Left Animations" hidden="false" id="9" name="_LeftAnimations" order="8"/>
         <text default="" defaultValue="" desc="Shoot right if the current animation name contains this text." dropdown="" fullname="Right Animations" hidden="false" id="10" name="_RightAnimations" order="9"/>
-        <boolean default="" defaultValue="" desc="" dropdown="" fullname="Wait" hidden="true" id="11" name="_Wait" order="10"/>
         <number default="0.0" defaultValue="0.0" desc="The maximum number of bullets created per second." dropdown="" fullname="Rate Of Fire" hidden="false" id="12" name="_RateOfFire" order="11"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="RandomEnergy" hidden="true" id="13" name="_RandomEnergy" order="12"/>
         <blocks/>
@@ -547,7 +550,7 @@
         <image default="" defaultValue="" desc="" dropdown="" fullname="EnergyImage" hidden="false" id="5" name="_EnergyImage" order="5"/>
         <actor default="" defaultValue="" desc="" dropdown="" fullname="EnergyCell" hidden="false" id="6" name="_EnergyCell" order="6"/>
         <image-instance default="" defaultValue="" desc="" dropdown="" fullname="EnergyInstance" hidden="false" id="7" name="_EnergyInstance" order="7"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="boxWidth" hidden="false" id="8" name="_boxWidth" order="8"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="boxWidth" hidden="false" id="8" name="_boxWidth" order="8"/>
         <blocks/>
         <events>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
@@ -589,7 +592,7 @@
         <blocks/>
         <events>
             <event displayName="Keyboard" enabled="true" id="1" name="event-key-press-release" order="1" repeats="true"/>
-            <event displayName="Created" enabled="true" id="2" name="init" order="3" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="7" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="34" attachedevent="true" class="scripts.ActorEvents_34" classname="scripts.ActorEvents_34" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="40" name="ActorEvents_34" oid="-1" package="scripts." shared="false" type="actor">
@@ -605,6 +608,8 @@
         <blocks/>
         <events>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
+            <event displayName="Keyboard" enabled="true" id="3" name="event-key-press-release" order="5" repeats="true"/>
+            <event displayName="Created" enabled="true" id="4" name="init" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="36" attachedevent="true" class="scripts.ActorEvents_36" classname="scripts.ActorEvents_36" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="42" name="ActorEvents_36" oid="-1" package="scripts." shared="false" type="actor">
@@ -674,6 +679,7 @@
         <blocks/>
         <events>
             <event displayName="Keyboard" enabled="true" id="1" name="event-key-press-release" order="1" repeats="true"/>
+            <event displayName="Keyboard" enabled="true" id="2" name="event-key-press-release" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="57" attachedevent="true" class="scripts.ActorEvents_57" classname="scripts.ActorEvents_57" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="53" name="ActorEvents_57" oid="-1" package="scripts." shared="false" type="actor">
@@ -684,10 +690,76 @@
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="PercentClosed" hidden="false" id="1" name="_PercentClosed" order="0"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="RandomlyCloseDoors" hidden="true" id="2" name="_RandomlyCloseDoors" order="1"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="PercentMildlyCracked" hidden="false" id="3" name="_PercentMildlyCracked" order="2"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="PercentVeryCracked" hidden="false" id="4" name="_PercentVeryCracked" order="3"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="PercentVeryCracked" hidden="false" id="4" name="_PercentVeryCracked" order="3"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_55_55_DoorOffScreenHandler" classname="scripts.Design_55_55_DoorOffScreenHandler" desc="" description="" design="true" drawOrder="0" id="55" name="DoorOffScreenHandler" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_56_56_SceneEntitySpread" classname="scripts.Design_56_56_SceneEntitySpread" desc="" description="" design="true" drawOrder="0" id="56" name="SceneEntitySpread" oid="-1" package="scripts" shared="false" type="scene">
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="NewRandomNum" hidden="true" id="1" name="_NewRandomNum" order="0"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="ListLiveEntitiesCol" hidden="true" id="2" name="_ListLiveEntitiesCol" order="1"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="ListNewEntitiesRow" hidden="true" id="3" name="_ListNewEntitiesRow" order="6"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="KeepAlive" hidden="true" id="6" name="_KeepAlive" order="7"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="IndexOfListLiveEntries" hidden="true" id="7" name="_IndexOfListLiveEntries" order="4"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="IndexOfListNewEntities" hidden="true" id="8" name="_IndexOfListNewEntities" order="5"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="ListLiveEntitiesRow" hidden="true" id="9" name="_ListLiveEntitiesRow" order="11"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="ListNewEntitiesCol" hidden="true" id="10" name="_ListNewEntitiesCol" order="8"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="ListItemRow" hidden="true" id="11" name="_ListItemRow" order="9"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="ListItemCol" hidden="true" id="12" name="_ListItemCol" order="10"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="ForLoopIndex" hidden="true" id="13" name="_ForLoopIndex" order="2"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="RndSpreadValue" hidden="true" id="14" name="_RndSpreadValue" order="3"/>
+        <blocks/>
+        <events>
+            <event displayName="Entity Spawner Created" enabled="true" id="2" name="event-type-create-kill" order="3" repeats="true"/>
+            <event displayName="Created" enabled="true" id="3" name="init" order="4" repeats="true"/>
+            <event displayName="Every N secs" enabled="true" id="4" name="event-periodic" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_57_57_SetDifficultySettings" classname="scripts.Design_57_57_SetDifficultySettings" desc="" description="" design="true" drawOrder="0" id="57" name="SetDifficultySettings" oid="-1" package="scripts" shared="false" type="scene">
+        <blocks/>
+        <events>
+            <event displayName="Custom Event" enabled="true" id="1" name="event-custom" order="1" repeats="true"/>
+            <event displayName="SetEasy" enabled="true" id="2" name="event-custom" order="2" repeats="true"/>
+            <event displayName="SetNormal" enabled="true" id="3" name="event-custom" order="3" repeats="true"/>
+            <event displayName="SetHard" enabled="true" id="5" name="event-custom" order="5" repeats="true"/>
+            <event displayName="SetImpossible" enabled="true" id="6" name="event-custom" order="6" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_58_58_PlayerDiesonEntityTiles" classname="scripts.Design_58_58_PlayerDiesonEntityTiles" desc="" description="" design="true" drawOrder="0" id="58" name="Player Dies on Entity Tiles" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events>
+            <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="59" attachedevent="true" class="scripts.ActorEvents_59" classname="scripts.ActorEvents_59" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="59" name="ActorEvents_59" oid="-1" package="scripts." shared="false" type="actor">
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Killable" hidden="false" id="1" name="_Killable" order="0"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Stop Moving" hidden="false" id="2" name="_StopMoving" order="1"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_60_60_PreventItemTouching" classname="scripts.Design_60_60_PreventItemTouching" desc="" description="" design="true" drawOrder="0" id="60" name="PreventItemTouching" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events>
+            <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Actor - Group" enabled="true" id="2" name="event-collide-actortogroup" order="3" repeats="true"/>
+            <event displayName="Created" enabled="true" id="3" name="init" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_61_61_DeleteInitialEnergyCell" classname="scripts.Design_61_61_DeleteInitialEnergyCell" desc="" description="" design="true" drawOrder="0" id="61" name="Delete Initial Energy Cell" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events>
+            <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
         </events>
     </snippet>
 </pack>

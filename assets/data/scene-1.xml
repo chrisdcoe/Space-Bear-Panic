@@ -12,7 +12,9 @@
         <actor a="0.0" aid="1" c="false" group="2" id="36" name="BearFace 1" sx="2.0" sy="2.0" x="200" y="136" z="0"/>
         <actor a="0.0" aid="2" c="false" group="3" id="34" name="TitleGUI 2" sx="1.0" sy="1.0" x="0" y="0" z="0"/>
     </actors>
-    <snippets/>
+    <snippets>
+        <s enabled="true" id="57"/>
+    </snippets>
     <terrain/>
     <atlases members="" retainAtlases="true"/>
 </scene>
