@@ -105,6 +105,7 @@
     </attcats>
     <props/>
     <attributes>
+        <number cid="0" id="22" name="MaxEnergyGain" save="true" value="0"/>
         <boolean cid="-1" id="2" name="CarryingEnergy" save="true" value="false"/>
         <number cid="-1" id="7" name="Difficulty" save="true" value="0.0"/>
         <number cid="1" id="16" name="Killed" save="true" value="0.0"/>
@@ -113,6 +114,7 @@
         <number cid="0" id="18" name="Energy Decay Speed" save="true" value="6.0"/>
         <number cid="1" id="17" name="Created" save="true" value="0.0"/>
         <number cid="0" id="10" name="Entity Spawn Interval" save="true" value="60.0"/>
+        <number cid="0" id="21" name="MinEnergyGain" save="true" value="0"/>
         <list cid="-1" id="19" name="ListLiveEntitiesRow" save="true" val="list"/>
         <number cid="-1" id="0" name="Energy" save="true" value="0.0"/>
         <text cid="0" id="14" name="TextDifficulty" save="true" value="NORMAL"/>
