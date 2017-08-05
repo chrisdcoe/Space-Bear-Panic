@@ -106,10 +106,11 @@
             <poly data="4,4,4,12,4,12,12,4,12" density="0.1" fric="0.2" gid="7" id="0" name="Moving" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="16" id="60" name="Entity" shared="false" width="16">
+    <sprite atlasID="0" default="1" defaultAnimation="1" desc="" height="16" id="60" name="Entity" shared="false" width="16">
         <anim across="2" down="2" durations="100,100,100,100" height="32" id="0" loop="true" name="Idle" numframes="4" originx="8" originy="8" sync="false" version="2" width="32">
             <poly data="4,4,4,12,4,12,12,4,12" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="true"/>
         </anim>
+        <anim across="1" down="1" durations="100" height="16" id="1" loop="true" name="Animation 1" numframes="1" originx="8" originy="8" sync="false" version="2" width="16"/>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="59" fixedrot="true" fric="0.2" gid="2" id="59" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Entity Spawner" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="60" static="false">
         <snippets/>

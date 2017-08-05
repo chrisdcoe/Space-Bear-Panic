@@ -14,12 +14,6 @@
             <event displayName="Updating" enabled="true" id="2" name="step" order="3" repeats="true"/>
             <event displayName="Created" enabled="true" id="3" name="init" order="2" repeats="true"/>
             <event displayName="Player Killed" enabled="true" id="4" name="event-actor-create-kill" order="4" repeats="true"/>
-            <event displayName="Entity Created" enabled="true" id="5" name="event-type-create-kill" order="5" repeats="true"/>
-            <event displayName="Entity Killed" enabled="true" id="6" name="event-type-create-kill" order="6" repeats="true"/>
-            <event displayName="Type - Type" enabled="true" id="7" name="event-collide-typetotype" order="7" repeats="true"/>
-            <event displayName="Type - Type" enabled="true" id="8" name="event-collide-typetotype" order="8" repeats="true"/>
-            <event displayName="Type - Type" enabled="true" id="9" name="event-collide-typetotype" order="9" repeats="true"/>
-            <event displayName="Type - Type" enabled="true" id="10" name="event-collide-typetotype" order="10" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="5" attachedevent="true" class="scripts.ActorEvents_5" classname="scripts.ActorEvents_5" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="1" name="ActorEvents_5" oid="-1" package="scripts." shared="false" type="actor">
@@ -718,7 +712,6 @@
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="RndSpreadValue" hidden="true" id="14" name="_RndSpreadValue" order="3"/>
         <blocks/>
         <events>
-            <event displayName="Entity Spawner Created" enabled="true" id="2" name="event-type-create-kill" order="3" repeats="true"/>
             <event displayName="Created" enabled="true" id="3" name="init" order="4" repeats="true"/>
             <event displayName="Every N secs" enabled="true" id="4" name="event-periodic" order="2" repeats="true"/>
         </events>
@@ -743,8 +736,12 @@
     <snippet actorid="59" attachedevent="true" class="scripts.ActorEvents_59" classname="scripts.ActorEvents_59" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="59" name="ActorEvents_59" oid="-1" package="scripts." shared="false" type="actor">
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Killable" hidden="false" id="1" name="_Killable" order="0"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Stop Moving" hidden="false" id="2" name="_StopMoving" order="1"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="ListLiveEntitiesRow" hidden="true" id="3" name="_ListLiveEntitiesRow" order="2"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="ListLiveEntitiesCol" hidden="true" id="4" name="_ListLiveEntitiesCol" order="3"/>
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Actor Created" enabled="true" id="2" name="event-actor-create-kill" order="2" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_60_60_PreventItemTouching" classname="scripts.Design_60_60_PreventItemTouching" desc="" description="" design="true" drawOrder="0" id="60" name="PreventItemTouching" oid="-1" package="scripts" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
