@@ -684,11 +684,7 @@
             <event displayName="Every N secs" enabled="true" id="4" name="event-periodic" order="2" repeats="true"/>
             <event displayName="PopulateLists" enabled="true" id="5" name="event-custom" order="5" repeats="true"/>
             <event displayName="ClearLists" enabled="true" id="6" name="event-custom" order="4" repeats="true"/>
-<<<<<<< HEAD
             <event displayName="SettleTiles" enabled="false" id="8" name="event-custom" order="3" repeats="true"/>
-=======
-            <event displayName="SettleTiles" enabled="true" id="8" name="event-custom" order="3" repeats="true"/>
->>>>>>> 41d80f361548de2fbb4afde1768da31c763440ff
             <event displayName="Step1" enabled="true" id="9" name="event-custom" order="6" repeats="true"/>
             <event displayName="Step2" enabled="true" id="10" name="event-custom" order="7" repeats="true"/>
             <event displayName="Step4" enabled="true" id="12" name="event-custom" order="10" repeats="true"/>

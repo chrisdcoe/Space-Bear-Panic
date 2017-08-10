@@ -95,18 +95,6 @@
         <anim across="2" down="2" durations="100,100,100,100" height="32" id="3" loop="false" name="Spread Down" numframes="4" originx="8" originy="8" sync="false" version="2" width="32">
             <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 3" rest="0.0" sensor="false"/>
         </anim>
-<<<<<<< HEAD
-=======
-        <anim across="2" down="2" durations="100,100,100,100" height="32" id="1" loop="false" name="Spread Up" numframes="4" originx="8" originy="8" sync="false" version="2" width="32">
-            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="Spread Up" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="2" down="2" durations="100,100,100,100" height="32" id="2" loop="false" name="Spread Left" numframes="4" originx="8" originy="8" sync="false" version="2" width="32">
-            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="2" down="2" durations="100,100,100,100" height="32" id="3" loop="false" name="Spread Down" numframes="4" originx="8" originy="8" sync="false" version="2" width="32">
-            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 3" rest="0.0" sensor="false"/>
-        </anim>
->>>>>>> 41d80f361548de2fbb4afde1768da31c763440ff
         <anim across="2" down="2" durations="100,100,100,100" height="32" id="4" loop="false" name="Spread Right" numframes="4" originx="8" originy="8" sync="false" version="2" width="32">
             <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 4" rest="0.0" sensor="false"/>
         </anim>
@@ -121,11 +109,7 @@
         <snippets/>
     </actor>
     <tileset across="4" atlasID="0" desc="" down="5" id="14" name="EntityTile" oid="-1" shared="false" th="16" tw="16">
-<<<<<<< HEAD
         <tile collision="-1" data="entity" durations="100,100,100,100" frames="0" id="20" order="-1"/>
-=======
-        <tile collision="26" data="entity" durations="100,100,100,100" frames="0" id="20" order="-1"/>
->>>>>>> 41d80f361548de2fbb4afde1768da31c763440ff
         <tile collision="-1" data="" durations="100" frames="1" id="21" order="-1"/>
         <tile collision="-1" data="" durations="100" frames="2" id="22" order="-1"/>
         <tile collision="-1" data="" durations="100" frames="3" id="23" order="-1"/>
